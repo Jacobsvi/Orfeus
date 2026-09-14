@@ -4,6 +4,7 @@ import "../Style/global.css";
 import Header from "../components/Header.astro";
 import Card from "../components/Card.astro";
 import Footer from "../components/Footer.astro";
+import Video from "..//components/Video.astro";
 ---
 
 <html lang="en">
@@ -16,7 +17,12 @@ import Footer from "../components/Footer.astro";
     <title>RÅDGIVNINGEN ORFEUS</title>
   </head>
   <body>
-    <Header headline="RÅDGIVNINGEN ORFEUS"/>
+    <Header headline="RÅDGIVNINGEN ORFEUS" />
+
+    <section>
+      <Video />
+    </section>
+
     <section>
       <h2>Her kunne der være nogle cards</h2>
       <div class="cards">
@@ -25,14 +31,14 @@ import Footer from "../components/Footer.astro";
         <Card headline="Lidt ekstra" text="Som bestemt er vigtigt" />
       </div>
     </section>
-   
+
     <section>
       <h2>Her kunne der være noget tekst</h2>
       <p>Selvom folk ikke læser det</p>
       <div class="two-columns">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, unde inventore exercitationem ipsum nobis atque laudantium molestiae ratione accusantium architecto est corrupti ab at, doloribus necessitatibus ea odio deserunt natus!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo facere quo rem, aliquam sint consequuntur quod itaque dolores voluptatibus vitae minus commodi delectus odit labore eum error fugiat architecto.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iusto pariatur sint totam voluptatum optio accusamus cumque, illum dignissimos id! Accusantium tempore reiciendis exercitationem, commodi delectus laudantium consectetur rem voluptatibus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iusto pariatur sint totam voluptatum optio accusamus cumque, illum dignissimos id! Accusantium tempore reiciendis exercitationem, commodi delectus laudantium consectetur rem voluptatibus?</p>
       </div>
     </section>
     <Footer />
@@ -53,6 +59,6 @@ import Footer from "../components/Footer.astro";
 
   .two-columns {
     padding-top: 2rem;
-	column-count: 2;
+    column-count: 2;
   }
 </style>

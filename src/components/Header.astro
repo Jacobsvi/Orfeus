@@ -1,10 +1,13 @@
 ---
-const { headline, text } = Astro.props;
+// const { headline, text } = Astro.props;
 ---
 
 <header>
-  <div>
+  <!-- <div>
     <h1>{headline}</h1>
+  </div> -->
+  <div>
+    <img src="Orfeus - Visuelt materiale/Logoer/RO_logo_lille.png" alt="logo">
   </div>
   <nav>
     <a href="index.astro"> VORES RÅDGIVNINGSTILBUD</a>
@@ -15,24 +18,33 @@ const { headline, text } = Astro.props;
 </header>
 
 <style>
+
+  img {
+    width: 80%;
+    padding: 70px;
+  }
   header {
     width: 100%;
-    height: 10vh;
+    height: 80px;
     display: flex;
     align-items: center;
-    background-color: #f4f0f0;
+    background-color: #F4F5F5;
+  
   }
 
   nav {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 30px;
   }
 
-  div {
-    padding: 0 10%;
+
+  p, a {
+    color: #475E4F;
   }
-  p {
-    font-size: larger;
+
+   a:hover{
+    margin-bottom: 10px;
+    color: #72977f;
   }
 </style>

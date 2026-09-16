@@ -5,8 +5,8 @@ import Header from "../components/Header.astro";
 import Card from "../components/Card.astro";
 import Footer from "../components/Footer.astro";
 import Video from "..//components/Video.astro";
+import Citat from "..//components/Card2.astro";
 import Interview from "..//components/Interview.astro";
-
 ---
 
 <html lang="en">
@@ -17,7 +17,7 @@ import Interview from "..//components/Interview.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>RÅDGIVNINGEN ORFEUS</title>
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, nofollow" />
   </head>
   <body>
     <Header headline="RÅDGIVNINGEN ORFEUS" />
@@ -26,17 +26,17 @@ import Interview from "..//components/Interview.astro";
       <Video />
     </section>
 
-
+    <section>
+      <Citat />
+    </section>
 
     <section>
- <Interview />
-
+      <Interview />
     </section>
-    
 
     <section>
       <h2>Her kunne der være noget tekst</h2>
-     
+
       <div class="two-columns">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, unde inventore exercitationem ipsum nobis atque laudantium molestiae ratione accusantium architecto est corrupti ab at, doloribus necessitatibus ea odio deserunt natus!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse explicabo facere quo rem, aliquam sint consequuntur quod itaque dolores voluptatibus vitae minus commodi delectus odit labore eum error fugiat architecto.</p>
@@ -48,8 +48,6 @@ import Interview from "..//components/Interview.astro";
 </html>
 
 <style>
- 
-
   .cards {
     display: grid;
     gap: 2rem;
